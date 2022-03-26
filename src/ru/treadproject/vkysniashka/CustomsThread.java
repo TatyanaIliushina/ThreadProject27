@@ -1,6 +1,7 @@
 package ru.treadproject.vkysniashka;
 
-public class CustomsThread  implements Runnable { // потоки заказов
+public class CustomsThread  implements Runnable {
+    public int x; // потоки заказов
 
     private Integer id;
     private String adress;
@@ -8,6 +9,9 @@ public class CustomsThread  implements Runnable { // потоки заказов
         public CustomsThread(Integer id, String adress) {
         this.id = id;
         this.adress = adress;
+    }
+
+    public CustomsThread(InfoResource infoResource) {
     }
 
     @Override
